@@ -621,14 +621,11 @@ h6 {
     line-height: 1.4
 }
 
-img[alt~="imgcenter"] {
-  display: block;
+img {
+    display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-img {
-  width: 100%;
 }
 
 .clearfix:after {
@@ -1040,7 +1037,8 @@ header .mobile-nav .secondary-nav {
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     margin-bottom: 2rem;
-    list-style: none
+    list-style: none;
+    z-index:100;
 }
 
 header .mobile-nav .secondary-nav>li {
@@ -1531,7 +1529,8 @@ footer.main.post {
     header .secondary-nav {
         display: block!important;
         background-color: #434343;
-        padding: .5rem
+        padding: .5rem;
+        z-index:100;
     }
     header .secondary-nav .container {
         display: -ms-flexbox;

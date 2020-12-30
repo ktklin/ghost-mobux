@@ -16,7 +16,10 @@
           .format('LL')
        );
     });
+    $('.secondary-nav').scrollFix();
 
     });
 
+
 })(jQuery);
+
