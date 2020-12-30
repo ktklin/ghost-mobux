@@ -1,4 +1,4 @@
-#ghost-mobux
+# ghost-mobux
 
 Minimal, lightweight and responsive theme using [milligram](https://github.com/milligram/milligram)
 A demo can be found [here](https://mobux.de)
@@ -25,7 +25,7 @@ and restart ghost (you might need to switch back to directory of your ghost inst
 ghost restart
 ```
 
-Finally, log into your ghost instance and activate the theme by switching to **Settings > Design** and choosing **activate** for the **mobux** theme.
+Finally, log into your ghost instance and activate the theme by switching to **Settings > Design** and choosing **activate** for the **ghost-mobux** theme.
 
 ## Copyright & License
 
