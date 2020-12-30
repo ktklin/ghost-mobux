@@ -622,11 +622,17 @@ h6 {
 }
 
 img {
-    display: block;
+  width: 100%;
+}
+
+img[alt~='imgcenter'] {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+
+
 
 .clearfix:after {
     clear: both;
