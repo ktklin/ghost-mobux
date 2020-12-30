@@ -1,0 +1,37 @@
+{
+    "name": "mobux",
+    "description": "Minimal and responsive theme for ghost",
+    "demo": "https://mobux.de",
+    "version": "0.0.1",
+    "engines": {
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Kurt Klinner",
+        "email": "kurt@mobux.de",
+        "url": "https://mobux.de"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Blog"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ktklin/ghost-themes"
+    },
+    "bugs": "https://github.com/ktklin/ghost-themes/issues",
+    "contributors": "https://github.com/ktklin/ghost-themes/graphs/contributors",
+    "config": {
+        "posts_per_page": 5
+    }
+}

@@ -1,0 +1,18 @@
+<section id="side-bar" class="column">
+    <div class="author">
+        <script>
+        category=window.location.pathname;
+        document.write('<img src="{{asset "/img/' + category.substring(5,category.length-1) + '-logo.png"}}">' );
+        </script>
+    </div>
+    <section class="recent-posts">
+        <h3>Artikel</h3>
+        <ul>
+                {{#foreach posts limit="5"}}
+                <li>
+                        <a href="{{url}}">{{title}}</a>
+                </li>
+                {{/foreach}}
+        </ul>
+    </section>
+</section>

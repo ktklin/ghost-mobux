@@ -1,0 +1,17 @@
+<script type="text/javascript" src="{{asset 'js/prism.js'}}"></script>
+<script type="text/javascript" src="{{asset 'js/moment.min.js'}}"></script>
+<script type="text/javascript" src="{{asset 'js/de.js'}}"></script>
+<script type="text/javascript" src="{{asset 'js/moment-timezone-with-data-2010-2020.min.js'}}"></script>
+<script type="text/javascript" src="{{asset 'js/mobux.js'}}"></script>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.mobile-nav');
+
+        menu.classList.toggle('show-mobile-nav');
+    }
+
+    document.querySelector('.mobile-nav-toggle')
+            .addEventListener('click', toggleMenu);
+
+</script>

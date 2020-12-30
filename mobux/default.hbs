@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        {{! Document Settings }}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        {{! Page Meta }}
+        <title>{{@site.title}}</title>
+        <meta name="description" content="{{@site.description}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        {{ghost_head}}
+        <link rel="stylesheet" href="{{asset "css/milligram.css"}}">
+        <link rel="stylesheet" href="{{asset "css/normalise.css"}}">
+        <link rel="stylesheet" href="{{asset "css/prism.css"}}">
+        <link rel="stylesheet" href="{{asset "css/font-awesome.min.css"}}">
+        <link rel="stylesheet" href="{{asset "css/mobux.css"}}">
+
+        <script src="{{asset "js/modernizr-2.8.0.min.js"}}"></script>
+    </head>
+    <body>
+
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        {{>header}}
+
+        {{{body}}}
+
+        {{>footer}}
+
+        {{ghost_foot}}
+
+        {{>scripts}}
+    </body>
+</html>

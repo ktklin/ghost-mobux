@@ -1,0 +1,74 @@
+{{!< default}}
+
+
+        {{#post}}
+{{#is "page"}}
+        <div class="container margin-bottom-2rem post-container">
+            <div class="row">
+                <div id="main" class="column">
+                    <article class="blogpost {{post_class}}">
+                        {{content}}
+                        </article>
+                        </div>
+                        </div>
+                        </div>
+{{else}}
+        <div class="container margin-bottom-2rem post-container">
+            <div class="row">
+                {{> sidebar_post}}
+                <div id="main" class="column">
+
+                    <article class="blogpost {{post_class}}">
+                        <h1>
+                            {{title}}</a>
+                        </h1>
+
+                        <div class="post-summary-meta post-meta">
+                               <span class="author" style="flex-grow:1">{{authors limit="1"}}</span>
+                               <span class="published">
+                                        <time class="post-date" datetime="{{date published_at format="MM/DD/YYYY"}}">{{date published_at format="Do MMMM YYYY"}}</time>
+                               </span>
+                               <span class="post-summary-category">{{primary_tag.name}}</span>
+                               <span class="readtime">
+                                        {{reading_time minute=(t "1 min. Lesezeit") minutes=(t "% min. Lesezeit")}}
+                               </span>
+                        </div>
+
+                        {{content}}
+
+                        <div class="share-buttons meta-info">
+                        Artikel weiterempfehlen
+                            <ul>
+                                <li><a class="icon-twitter"  href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this page"></a></li>
+                                <li><a class="icon-linkedin"  href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&title={{encode title}}" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on LinkenIn"></a></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="read-next">
+            {{#next_post}}
+            <a class="next-story" href="{{url}}">
+                <section>
+                    <h3>{{title}}</h3>
+                </section>
+            </a>
+            {{/next_post}}
+
+            {{#prev_post}}
+            <a class="prev-story" href="{{url}}">
+                <section>
+                    <h3>{{title}}</h3>
+                </section>
+            </a>
+            {{/prev_post}}
+        </div>
+        {{/is}}
+
+        {{/post}}

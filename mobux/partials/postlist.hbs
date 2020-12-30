@@ -1,0 +1,16 @@
+{{#foreach posts}}
+<article class="post-summary {{post_class}}">
+    <h2 class="post-summary-header"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
+    <p>{{excerpt characters="300"}}&hellip;</p>
+    <footer class="post-summary-meta">
+       <span class="author" style="flex-grow:1">{{authors limit="1"}}</span>
+        <span class="published">
+        <time class="post-date" datetime="{{date published_at format="MM/DD/YYYY"}}"/DD/>{{date published_at format="Do MMMM YYYY"}}</time>
+        </span>
+       <span class="post-summary-category">{{primary_tag.name}}</span>
+        <span class="readtime">
+        {{reading_time minute=(t "1 min. Lesezeit") minutes=(t "% min. Lesezeit")}}
+        </span>
+    </footer>
+</article>
+{{/foreach}}

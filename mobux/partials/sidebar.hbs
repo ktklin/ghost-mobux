@@ -1,0 +1,21 @@
+<section id="side-bar" class="column">
+
+    <div class="author">
+        <img src="{{asset "img/profile-image.jpg"}}" alt="Kurt klinner" />
+        <p>Talk nerdy to me</p>
+    </div>
+
+    {{#get "posts" limit="5" as |recents|}}
+    <section class="recent-posts">
+      <h3>Aktuelle Artikel</h3>
+      <ul>
+        {{#foreach recents}}
+        <li>
+          <a href="{{url}}">{{title}}</a>
+        </li>
+        {{/foreach}}
+      </ul>
+    </section>
+    {{/get}}
+
+  </section>
