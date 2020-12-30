@@ -1,4 +1,4 @@
-#ghost-mobux
+# ghost-mobux
 
 Minimal, lightweight and responsive theme using [milligram](https://github.com/milligram/milligram)
 A demo can be found [here](https://mobux.de)
