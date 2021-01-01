@@ -5,9 +5,7 @@
 	<img src="{{img_url feature_image}}">
   {{/if}}
     </div>
-{{#tag}}
-{{name}}{{/tag}}
-    {{#get "posts" limit="5" filter="primary_tag:{{primary_tag.slug}}"  as |recents|}}
+    {{#get "posts" limit="5" filter="tag:{{primary_tag.slug}}"  as |recents|}}
     <section class="recent-posts">
       <h3>Artikel</h3>
       <ul>
@@ -20,4 +18,4 @@
     </section>
     {{/get}}
 
-  </section>
+</section>
