@@ -27,10 +27,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/ktklin/ghost-themes"
+        "url": "https://github.com/ktklin/ghost-mobux"
     },
-    "bugs": "https://github.com/ktklin/ghost-themes/issues",
-    "contributors": "https://github.com/ktklin/ghost-themes/graphs/contributors",
+    "bugs": "https://github.com/ktklin/ghost-mobux/issues",
+    "contributors": "hhttps://github.com/ktklin/ghost-mobux/graphs/contributors",
     "config": {
         "posts_per_page": 5
     }
